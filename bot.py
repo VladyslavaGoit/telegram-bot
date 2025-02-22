@@ -1,9 +1,9 @@
 import asyncio
-import logging
-from aiogram import Bot, types, Dispatcher, executor
+import os
+from aiogram import Bot, types, Dispatcher 
 
 
-API_TOKEN = "7951258588:AAHxgaubHfJb01xcyd95HakpLIj1ierIezQ"
+API_TOKEN = os.getenv("7951258588:AAHxgaubHfJb01xcyd95HakpLIj1ierIezQ")
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
 # Обробник команд
